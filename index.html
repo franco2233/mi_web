@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mi Página Web</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Bienvenido a Mi Página Web</h1>
+        <nav>
+            <ul>
+                <li><a href="#inicio">Inicio</a></li>
+                <li><a href="#about">Sobre Nosotros</a></li>
+                <li><a href="#contact">Contacto</a></li>
+            </ul>
+        </nav>
+        <button id="toggle-dark-mode">Modo Oscuro</button>
+    </header>
+    <main>
+        <section id="inicio">
+            <h2>Inicio</h2>
+            <p>Este es el contenido de la sección de inicio.</p>
+        </section>
+        <section id="about">
+            <h2>Sobre Nosotros</h2>
+            <p>Información sobre nosotros.</p>
+        </section>
+        <section id="contact">
+            <h2>Contacto</h2>
+            <form id="comment-form">
+                <label for="name">Nombre:</label>
+                <input type="text" id="name" name="name" required>
+                <label for="comment">Comentario:</label>
+                <textarea id="comment" name="comment" required></textarea>
+                <button type="submit">Enviar</button>
+            </form>
+            <div id="comments-section">
+                <h3>Comentarios</h3>
+                <ul id="comments-list"></ul>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2024 Mi Página Web. Todos los derechos reservados.</p>
+    </footer>
+    <script src="scripts.js"></script>
+</body>
+</html>
